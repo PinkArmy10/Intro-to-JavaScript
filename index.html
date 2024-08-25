@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="WelcomePara">
+        Welcome to CIT 215!
+    </P>
+
+    
+    
+    <label for "coursename">What language was created to add interactivity to the Web? : <input class="Q1" type="text"></input></label>
+
+    <!-- <label for "coursename2">What code library you would prefer - Vue, React or jQuery. : <input class="Q2" type="text"></input></label> -->
+
+</body>
+<Script>
+
+    var preferredLibrary = prompt("What code library would you prefer? (Vue, React, jQuery)");
+
+    alert("Your preferred code library is: " + preferredLibrary);
+
+    console.log("Check 1");
+    var paraText = document.querySelector("#WelcomePara")
+    console.log(paraText.textContent)
+
+
+    var txtCourse = document.querySelector('.Q1');
+
+    txtCourse.addEventListener('focusout', (event) => { alert(txtCourse.value) })
+
+
+    
+    var txtCourse2 = document.querySelector('.Q2');
+
+    txtCourse2.addEventListener('focusout', (event) => { alert(txtCourse2.value) })
+
+</Script>
+</html>
+
+<!-- // Get a reference ot the input field let txtLanguage = document.querySelector('.language');
+// Add the event listener for the focusout event txtLanguage.addEventListener('focusout', (event) => { alert("You said " + txtLanguage.value + ". JavaScript was created to add interactivity to the Web)."); }); 
+// Prompt for choice of library and store in variable let codeLibrary = prompt("What library would you prefer to use, Vue, React or jQuery?"); 
+// alert choice of library alert("You said " + codeLibrary);  -->
